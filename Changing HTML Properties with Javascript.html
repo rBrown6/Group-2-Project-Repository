@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- HTML Table for Testing Purposes -->
+<table id = "myTable" style="border: 10px solid red; font-size: 20px; font-weight: bold">
+<tr id = "row1" style = "color: blue" >
+<td id = "1.1" style = "border: 2px solid black">Row 1 Col 1
+<td id = "1.2" style = "border: 2px solid black">Row 1 Col 2</td
+</tr>
+</table>
+
+<!--Buttons to Launch a Functions -->
+<br><br><button type="submit" onclick = "changeTextColor()">Change Text Color
+<br><br><button type="submit" onclick = "changeBorderSize()">Change Cell Border Size</button>
+<br><br><button type="submit" onclick = "changeTableColor()">Change Table Color</but
+<br><br><button type="submit" onclick = "changeTableBold()">Change Font Boldness
+
+<script>
+
+// First JavaScript Function
+// Changes text color from blue to green and back again
+function changeTextColor(){
+var textcolor = document.getElementById("row1").style.color;
+if (textcolor== "green"){textcolor = "blue";}
+else{textcolor = "green";}
+document.getElementById("row1").style.color = textcolor;
+}
+
+// Second JavaScript Function
+// Changes Border Size
+function changeBorderSize(){
+var borderSize = document.getElementById("1.1").style.border;
+
+if (borderSize == "2px solid black"){borderSize = "4px solid black";}
+else{borderSize = "2px solid black";}
+document.getElementById("1.1").style.border = borderSize;
+document.getElementById("1.2").style.border = borderSize
+}
+
+// Third JavaScript Function
+// Changes Table Color
+function changeTableColor(){
+var tableColor = document.getElementById("myTable").style.border;
+
+if (tableColor == "10px solid red"){tableColor = "10px solid green";}
+else{tableColor = "10px solid red";}
+document.getElementById("myTable").style.border = tableColor;
+}
+
+// Fourth JavaScript Function
+// Changes Text Boldness
+function changeTableBold(){
+var tableBold = document.getElementById("myTable").style.fontWeight;
+
+if (tableBold == "bold"){tableBold = "normal";}
+else{tableBold = "bold";}
+document.getElementById("myTable").style.fontWeight = tableBold;
+}
+
+</script>
+</body>
+</html>
