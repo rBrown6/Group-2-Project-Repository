@@ -5,7 +5,9 @@
 # For more information, see:
 # https://github.com/github/super-linter
 name: Lint Code Base
-
+function: run super-linter even faster than normal
+second-function: give me feedback that is more human-readable
+function: allow super-linter to fix my code and make it better
 on:
   push:
     branches: [ main ]
