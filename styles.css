@@ -1,4 +1,4 @@
-/* Styles for the Class project page website */
+/* Styles for the Group 2 Class project page website */
 
 
 
@@ -8,33 +8,71 @@
 }
 /*When you have 2 word property, it must be seperated with a hyphen*/
 body {
-    background: grey;
+    background: lightslategray;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image:url();
     /* png = transparency */
 }
 
-
-
-
 div#wrapper {
     width:940px;
-    background:beige;
-    padding:20px;
-    margin:20px auto;
+    background:midnightblue;
+    /* padding:20px; */
+    margin:10px auto;
+    padding: 20px;
     overflow:hidden;
 }
-header {
-    
+header {  
     background:white;
-    margin-bottom : 20px;
+    width: 100%;
+    height: 400px;
+    /* margin: 20px auto; */
+}
+
+main {
+    background:midnightblue;
+    width: 580px;
+    float: left;
+    margin-right:20px;
+}
+
+div#opener {
+    background: midnightblue;
+}
+
+div#pageLinks {
+    background: lightskyblue;
+}
+
+aside {
+    background: aliceblue;
+    width: 320px;
+    float:right;
+    padding:5px;
+}
+
+ul {
+    padding-left: 20px;
+    padding-bottom:20px;
+}
+
+li {
+    margin-left: 20px;
+    text-decoration: none;
+    color:midnightblue;
+}
+
+article {
+    background:linen;
+    width:540px;
+    padding: 10px;
 }
 
 
 footer {
     height:50px;
     line-height:50px;
-    background:blueviolet;
+    background:midnightblue;
     clear:both;
     font-size:.9em;
     /* when you clear an element, you cannot add space above that element with a margin-top. You must use margin-bottom on the element that it had cleared!!! */
@@ -53,6 +91,7 @@ a {
     color:blueviolet;
 }
 
+
 img.right{
     float:right;
     margin-left:30px;
@@ -66,8 +105,13 @@ img.left {
 }
 
 h1,h2 {
+    color:purple;
     margin-bottom:10px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3, h4 {
+    color: midnightblue;
+    margin-bottom: 5px;
 }
 
 p{
