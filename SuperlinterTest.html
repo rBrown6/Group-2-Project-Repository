@@ -1,0 +1,30 @@
+<html>
+<head>
+
+<title>Using a Form</title>
+
+<script language="JavaScript">
+
+function reveal(){
+var firstName = document.theForm.elements[0].value
+var middleInitial = document.theForm.elements[1].value
+var lastName = document.theForm.elements[2].value
+document.write("Thank you, " + firstName + " " + middleInitial + " " + lastName + ".")
+}
+</script>
+
+</head>
+
+
+<form name="theForm">
+What is you first name?
+<input type=></br>
+What is your middle initial?
+<input type="text"></br>
+What is your last name?
+<input type="text"></br>
+<input type="button" value="Submit" onClick="reveal()">
+
+</form>
+</body>
+</html>
